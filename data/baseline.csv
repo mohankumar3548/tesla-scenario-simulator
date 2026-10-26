@@ -1,0 +1,14 @@
+parameter,value,description
+quarterly_demand_cars,120731.32,Cars customers would buy this quarter at today's price
+avg_selling_price_usd,46511.21,Average selling price per car
+cogs_per_car_usd,38788.92,Cost of goods per car
+cars_per_shift_per_quarter,9984.35,Assembly output of one weekly shift over a quarter
+shifts_per_week,14.0,Current shifts per week across the lines
+line_uptime,0.92,Share of scheduled time lines are running
+labour_hours_per_car,21.14,Direct labour hours to build one car
+production_workers,11500.0,Production workforce
+hours_per_worker_per_quarter,480.0,Available hours per worker per quarter
+battery_cells_gwh,8.96,Battery cell supply per quarter (GWh)
+kwh_per_car,70.0,Average battery pack size
+delivery_slots,132337.5,Cars delivery centres can hand over per quarter
+fixed_opex_usd,520000000.0,Fixed operating cost per quarter

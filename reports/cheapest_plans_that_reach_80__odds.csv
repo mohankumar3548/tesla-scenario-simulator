@@ -1,0 +1,9 @@
+plan,odds,extra_cost_per_quarter,profit_per_quarter,investment,cars
+"New line, +30% cells, +20% delivery",0.83,44200000,545138490,380000000.0,143654
+"New line, +30% cells, +30% delivery",0.92,47200000,544350845,380000000.0,143941
+"+3 shifts, +30% cells, +20% delivery",0.8,52200000,450130913,0.0,143174
+"+1 shift, new line, +30% cells, +20% delivery",0.87,53200000,531701909,380000000.0,143080
+"+3 shifts, +30% cells, +30% delivery",0.85,55200000,443543681,0.0,142672
+"+1 shift, new line, +30% cells, +30% delivery",0.94,56200000,538024560,380000000.0,144287
+"+4 shifts, +30% cells, +20% delivery",0.85,61200000,446339927,0.0,143904
+"+2 shifts, new line, +30% cells, +20% delivery",0.89,62200000,530559383,380000000.0,144097

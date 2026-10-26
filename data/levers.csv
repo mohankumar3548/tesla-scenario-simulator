@@ -1,0 +1,5 @@
+lever,cost_per_quarter_usd,investment_usd,description
+extra_shift,9000000.0,0.0,Per extra weekly shift: overtime pay and shift premiums per quarter
+new_line,0.0,380000000.0,"New assembly line: +25% capacity and +20% labour pool, 20-quarter depreciation"
+battery_contract_10pct,6400000.0,0.0,Per extra 10% of cell supply
+delivery_partner_10pct,3000000.0,0.0,Per extra 10% of delivery slots via third parties

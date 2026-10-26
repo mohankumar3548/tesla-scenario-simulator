@@ -1,0 +1,51 @@
+{
+  "num": "14",
+  "area": "Business Analytics",
+  "product": "What-If Business Simulator",
+  "title": "Tesla Growth Simulator",
+  "company": "Tesla",
+  "why": "Tesla's growth depends on factories, battery cells, workers and delivery logistics scaling together, and it has hit production ramp limits before. This tool tests whether a sales target is possible and what it would cost to get there.",
+  "problem": "Management wants to increase sales by 20% but does not know whether existing employees, inventory, production capacity and logistics can support the additional demand. Build an AI scenario-analysis system that simulates business consequences of different strategic decisions.",
+  "data_note": "One region's quarterly plan: 4 assembly lines, battery supply, workforce, delivery centres and cost base (sample data).",
+  "steps": [
+    {
+      "step": "Baseline business model",
+      "detail": "Demand, line capacity, labour hours, battery cells, delivery slots, costs"
+    },
+    {
+      "step": "Map dependencies",
+      "detail": "Demand needs cars built, cars need labour and cells, cars need delivery slots"
+    },
+    {
+      "step": "Set the scenario",
+      "detail": "Sales growth, shifts, new line, battery contract, price, delivery partners"
+    },
+    {
+      "step": "Monte Carlo simulation",
+      "detail": "2,000 runs with uncertain demand, yield, productivity and supply"
+    },
+    {
+      "step": "Find the binding constraint",
+      "detail": "Which resource runs out first in each run"
+    },
+    {
+      "step": "Search for the cheapest plan",
+      "detail": "Try every combination of levers, keep the cheapest that hits the target 80% of the time"
+    },
+    {
+      "step": "Financial impact",
+      "detail": "Revenue, cost, margin and investment per scenario"
+    },
+    {
+      "step": "Scenario Q&A",
+      "detail": "AI analyst answers what-if questions"
+    }
+  ],
+  "questions": [
+    "Can we hit +20% with what we have today?",
+    "What is the cheapest way to reach the target?",
+    "What if we cut prices by 5% instead?",
+    "Which constraint should we fix first?"
+  ],
+  "author": "K Mohan Kumar"
+}

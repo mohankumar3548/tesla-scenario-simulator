@@ -1,0 +1,1469 @@
+{
+  "title": "Tesla Growth Simulator",
+  "company": "Tesla",
+  "kpis": [
+    {
+      "label": "Chance to meet demand",
+      "value": "22%",
+      "note": "144,878 cars (+20%) with your levers"
+    },
+    {
+      "label": "With today's resources",
+      "value": "4%",
+      "note": "Limited by battery cells"
+    },
+    {
+      "label": "Expected deliveries",
+      "value": "132,364",
+      "note": "80% range 123,695 to 140,011"
+    },
+    {
+      "label": "Quarterly profit",
+      "value": "$483.8M",
+      "note": "+$71.4M vs today"
+    },
+    {
+      "label": "Cheapest plan",
+      "value": "New line, +30% cells, +20% delivery",
+      "note": "83% odds, $44.2M a quarter"
+    }
+  ],
+  "algorithm": [
+    {
+      "step": "Baseline business model",
+      "output": "Base quarter: 120,731 cars, $5.62B revenue"
+    },
+    {
+      "step": "Map dependencies",
+      "output": "5 linked constraints"
+    },
+    {
+      "step": "Set the scenario",
+      "output": "+1 shifts, line no, +10% cells, +10% delivery, price +0%"
+    },
+    {
+      "step": "Monte Carlo simulation",
+      "output": "2000 runs, mean 132,364 cars delivered"
+    },
+    {
+      "step": "Find the binding constraint",
+      "output": "Binding most often: Assembly capacity (42% of runs)"
+    },
+    {
+      "step": "Search for the cheapest plan",
+      "output": "160 lever combinations tested; 14 reach 80% odds"
+    },
+    {
+      "step": "Financial impact",
+      "output": "Profit $412.3M -> $483.8M per quarter"
+    },
+    {
+      "step": "Scenario Q&A",
+      "output": "Ready"
+    }
+  ],
+  "tables": {
+    "Financial impact per quarter": [
+      {
+        "measure": "Cars delivered",
+        "today": "120,731",
+        "your_plan": "132,364"
+      },
+      {
+        "measure": "Revenue",
+        "today": "$5.62B",
+        "your_plan": "$6.16B"
+      },
+      {
+        "measure": "Operating profit",
+        "today": "$412.3M",
+        "your_plan": "$483.8M"
+      },
+      {
+        "measure": "Margin",
+        "today": "7.3%",
+        "your_plan": "7.9%"
+      },
+      {
+        "measure": "Up-front investment",
+        "today": "$0",
+        "your_plan": "$0"
+      },
+      {
+        "measure": "Odds of meeting demand",
+        "today": "4%",
+        "your_plan": "22%"
+      }
+    ],
+    "Cheapest plans that reach 80% odds": [
+      {
+        "plan": "New line, +30% cells, +20% delivery",
+        "odds": 0.83,
+        "extra_cost_per_quarter": 44200000,
+        "profit_per_quarter": 545138490,
+        "investment": 380000000.0,
+        "cars": 143654
+      },
+      {
+        "plan": "New line, +30% cells, +30% delivery",
+        "odds": 0.92,
+        "extra_cost_per_quarter": 47200000,
+        "profit_per_quarter": 544350845,
+        "investment": 380000000.0,
+        "cars": 143941
+      },
+      {
+        "plan": "+3 shifts, +30% cells, +20% delivery",
+        "odds": 0.8,
+        "extra_cost_per_quarter": 52200000,
+        "profit_per_quarter": 450130913,
+        "investment": 0.0,
+        "cars": 143174
+      },
+      {
+        "plan": "+1 shift, new line, +30% cells, +20% delivery",
+        "odds": 0.87,
+        "extra_cost_per_quarter": 53200000,
+        "profit_per_quarter": 531701909,
+        "investment": 380000000.0,
+        "cars": 143080
+      },
+      {
+        "plan": "+3 shifts, +30% cells, +30% delivery",
+        "odds": 0.85,
+        "extra_cost_per_quarter": 55200000,
+        "profit_per_quarter": 443543681,
+        "investment": 0.0,
+        "cars": 142672
+      },
+      {
+        "plan": "+1 shift, new line, +30% cells, +30% delivery",
+        "odds": 0.94,
+        "extra_cost_per_quarter": 56200000,
+        "profit_per_quarter": 538024560,
+        "investment": 380000000.0,
+        "cars": 144287
+      },
+      {
+        "plan": "+4 shifts, +30% cells, +20% delivery",
+        "odds": 0.85,
+        "extra_cost_per_quarter": 61200000,
+        "profit_per_quarter": 446339927,
+        "investment": 0.0,
+        "cars": 143904
+      },
+      {
+        "plan": "+2 shifts, new line, +30% cells, +20% delivery",
+        "odds": 0.89,
+        "extra_cost_per_quarter": 62200000,
+        "profit_per_quarter": 530559383,
+        "investment": 380000000.0,
+        "cars": 144097
+      }
+    ],
+    "All lever combinations": [
+      {
+        "plan": "+1 shift, new line, +30% cells, +30% delivery",
+        "odds": 0.94,
+        "extra_cost_per_quarter": 56200000,
+        "profit_per_quarter": 538024560,
+        "investment": 380000000.0,
+        "cars": 144287
+      },
+      {
+        "plan": "+2 shifts, new line, +30% cells, +30% delivery",
+        "odds": 0.93,
+        "extra_cost_per_quarter": 65200000,
+        "profit_per_quarter": 524437127,
+        "investment": 380000000.0,
+        "cars": 143693
+      },
+      {
+        "plan": "+3 shifts, new line, +30% cells, +30% delivery",
+        "odds": 0.93,
+        "extra_cost_per_quarter": 74200000,
+        "profit_per_quarter": 439111779,
+        "investment": 380000000.0,
+        "cars": 144712
+      },
+      {
+        "plan": "New line, +30% cells, +30% delivery",
+        "odds": 0.92,
+        "extra_cost_per_quarter": 47200000,
+        "profit_per_quarter": 544350845,
+        "investment": 380000000.0,
+        "cars": 143941
+      },
+      {
+        "plan": "+4 shifts, new line, +30% cells, +30% delivery",
+        "odds": 0.92,
+        "extra_cost_per_quarter": 83200000,
+        "profit_per_quarter": 425682966,
+        "investment": 380000000.0,
+        "cars": 144092
+      },
+      {
+        "plan": "+2 shifts, new line, +30% cells, +20% delivery",
+        "odds": 0.89,
+        "extra_cost_per_quarter": 62200000,
+        "profit_per_quarter": 530559383,
+        "investment": 380000000.0,
+        "cars": 144097
+      },
+      {
+        "plan": "+4 shifts, +30% cells, +30% delivery",
+        "odds": 0.89,
+        "extra_cost_per_quarter": 64200000,
+        "profit_per_quarter": 438245717,
+        "investment": 0.0,
+        "cars": 143191
+      },
+      {
+        "plan": "+3 shifts, new line, +30% cells, +20% delivery",
+        "odds": 0.89,
+        "extra_cost_per_quarter": 71200000,
+        "profit_per_quarter": 433967354,
+        "investment": 380000000.0,
+        "cars": 143572
+      },
+      {
+        "plan": "+1 shift, new line, +30% cells, +20% delivery",
+        "odds": 0.87,
+        "extra_cost_per_quarter": 53200000,
+        "profit_per_quarter": 531701909,
+        "investment": 380000000.0,
+        "cars": 143080
+      },
+      {
+        "plan": "+4 shifts, new line, +30% cells, +20% delivery",
+        "odds": 0.87,
+        "extra_cost_per_quarter": 80200000,
+        "profit_per_quarter": 428438796,
+        "investment": 380000000.0,
+        "cars": 144058
+      },
+      {
+        "plan": "+4 shifts, +30% cells, +20% delivery",
+        "odds": 0.85,
+        "extra_cost_per_quarter": 61200000,
+        "profit_per_quarter": 446339927,
+        "investment": 0.0,
+        "cars": 143904
+      },
+      {
+        "plan": "+3 shifts, +30% cells, +30% delivery",
+        "odds": 0.85,
+        "extra_cost_per_quarter": 55200000,
+        "profit_per_quarter": 443543681,
+        "investment": 0.0,
+        "cars": 142672
+      },
+      {
+        "plan": "New line, +30% cells, +20% delivery",
+        "odds": 0.83,
+        "extra_cost_per_quarter": 44200000,
+        "profit_per_quarter": 545138490,
+        "investment": 380000000.0,
+        "cars": 143654
+      },
+      {
+        "plan": "+3 shifts, +30% cells, +20% delivery",
+        "odds": 0.8,
+        "extra_cost_per_quarter": 52200000,
+        "profit_per_quarter": 450130913,
+        "investment": 0.0,
+        "cars": 143174
+      },
+      {
+        "plan": "+1 shift, new line, +20% cells, +30% delivery",
+        "odds": 0.79,
+        "extra_cost_per_quarter": 49800000,
+        "profit_per_quarter": 527929591,
+        "investment": 380000000.0,
+        "cars": 142151
+      },
+      {
+        "plan": "+1 shift, new line, +20% cells, +20% delivery",
+        "odds": 0.78,
+        "extra_cost_per_quarter": 46800000,
+        "profit_per_quarter": 529628882,
+        "investment": 380000000.0,
+        "cars": 141982
+      },
+      {
+        "plan": "+4 shifts, +20% cells, +30% delivery",
+        "odds": 0.78,
+        "extra_cost_per_quarter": 57800000,
+        "profit_per_quarter": 436395631,
+        "investment": 0.0,
+        "cars": 142035
+      },
+      {
+        "plan": "+4 shifts, new line, +20% cells, +20% delivery",
+        "odds": 0.76,
+        "extra_cost_per_quarter": 73800000,
+        "profit_per_quarter": 416234048,
+        "investment": 380000000.0,
+        "cars": 141452
+      },
+      {
+        "plan": "+4 shifts, new line, +20% cells, +30% delivery",
+        "odds": 0.76,
+        "extra_cost_per_quarter": 76800000,
+        "profit_per_quarter": 414269838,
+        "investment": 380000000.0,
+        "cars": 141597
+      },
+      {
+        "plan": "New line, +20% cells, +20% delivery",
+        "odds": 0.75,
+        "extra_cost_per_quarter": 37800000,
+        "profit_per_quarter": 532499954,
+        "investment": 380000000.0,
+        "cars": 141189
+      },
+      {
+        "plan": "+3 shifts, new line, +20% cells, +30% delivery",
+        "odds": 0.75,
+        "extra_cost_per_quarter": 67800000,
+        "profit_per_quarter": 426050173,
+        "investment": 380000000.0,
+        "cars": 141987
+      },
+      {
+        "plan": "New line, +20% cells, +30% delivery",
+        "odds": 0.74,
+        "extra_cost_per_quarter": 40800000,
+        "profit_per_quarter": 542410947,
+        "investment": 380000000.0,
+        "cars": 142861
+      },
+      {
+        "plan": "+3 shifts, new line, +20% cells, +20% delivery",
+        "odds": 0.73,
+        "extra_cost_per_quarter": 64800000,
+        "profit_per_quarter": 429945190,
+        "investment": 380000000.0,
+        "cars": 142112
+      },
+      {
+        "plan": "+2 shifts, new line, +20% cells, +20% delivery",
+        "odds": 0.73,
+        "extra_cost_per_quarter": 55800000,
+        "profit_per_quarter": 524056425,
+        "investment": 380000000.0,
+        "cars": 142426
+      },
+      {
+        "plan": "+2 shifts, new line, +20% cells, +30% delivery",
+        "odds": 0.73,
+        "extra_cost_per_quarter": 58800000,
+        "profit_per_quarter": 520983217,
+        "investment": 380000000.0,
+        "cars": 142417
+      },
+      {
+        "plan": "+4 shifts, +20% cells, +20% delivery",
+        "odds": 0.71,
+        "extra_cost_per_quarter": 54800000,
+        "profit_per_quarter": 439091210,
+        "investment": 0.0,
+        "cars": 141992
+      },
+      {
+        "plan": "+3 shifts, +20% cells, +30% delivery",
+        "odds": 0.7,
+        "extra_cost_per_quarter": 48800000,
+        "profit_per_quarter": 440941165,
+        "investment": 0.0,
+        "cars": 141411
+      },
+      {
+        "plan": "+3 shifts, +20% cells, +20% delivery",
+        "odds": 0.69,
+        "extra_cost_per_quarter": 45800000,
+        "profit_per_quarter": 443092965,
+        "investment": 0.0,
+        "cars": 141293
+      },
+      {
+        "plan": "+2 shifts, +30% cells, +20% delivery",
+        "odds": 0.65,
+        "extra_cost_per_quarter": 43200000,
+        "profit_per_quarter": 523652066,
+        "investment": 0.0,
+        "cars": 140742
+      },
+      {
+        "plan": "+4 shifts, +30% cells, +10% delivery",
+        "odds": 0.63,
+        "extra_cost_per_quarter": 58200000,
+        "profit_per_quarter": 426052869,
+        "investment": 0.0,
+        "cars": 140643
+      },
+      {
+        "plan": "+2 shifts, +30% cells, +30% delivery",
+        "odds": 0.62,
+        "extra_cost_per_quarter": 46200000,
+        "profit_per_quarter": 520914315,
+        "investment": 0.0,
+        "cars": 140776
+      },
+      {
+        "plan": "New line, +30% cells, +10% delivery",
+        "odds": 0.61,
+        "extra_cost_per_quarter": 41200000,
+        "profit_per_quarter": 522177427,
+        "investment": 380000000.0,
+        "cars": 140292
+      },
+      {
+        "plan": "+1 shift, new line, +30% cells, +10% delivery",
+        "odds": 0.6,
+        "extra_cost_per_quarter": 50200000,
+        "profit_per_quarter": 520214277,
+        "investment": 380000000.0,
+        "cars": 141203
+      },
+      {
+        "plan": "+2 shifts, new line, +30% cells, +10% delivery",
+        "odds": 0.59,
+        "extra_cost_per_quarter": 59200000,
+        "profit_per_quarter": 508837072,
+        "investment": 380000000.0,
+        "cars": 140896
+      },
+      {
+        "plan": "+4 shifts, new line, +30% cells, +10% delivery",
+        "odds": 0.59,
+        "extra_cost_per_quarter": 77200000,
+        "profit_per_quarter": 408091952,
+        "investment": 380000000.0,
+        "cars": 140788
+      },
+      {
+        "plan": "+2 shifts, +20% cells, +20% delivery",
+        "odds": 0.59,
+        "extra_cost_per_quarter": 36800000,
+        "profit_per_quarter": 522292651,
+        "investment": 0.0,
+        "cars": 139737
+      },
+      {
+        "plan": "+3 shifts, new line, +30% cells, +10% delivery",
+        "odds": 0.57,
+        "extra_cost_per_quarter": 68200000,
+        "profit_per_quarter": 415233645,
+        "investment": 380000000.0,
+        "cars": 140528
+      },
+      {
+        "plan": "+3 shifts, +30% cells, +10% delivery",
+        "odds": 0.57,
+        "extra_cost_per_quarter": 49200000,
+        "profit_per_quarter": 438715766,
+        "investment": 0.0,
+        "cars": 141156
+      },
+      {
+        "plan": "+2 shifts, +20% cells, +30% delivery",
+        "odds": 0.57,
+        "extra_cost_per_quarter": 39800000,
+        "profit_per_quarter": 518913336,
+        "investment": 0.0,
+        "cars": 139688
+      },
+      {
+        "plan": "+3 shifts, new line, +20% cells, +10% delivery",
+        "odds": 0.56,
+        "extra_cost_per_quarter": 61800000,
+        "profit_per_quarter": 412825702,
+        "investment": 380000000.0,
+        "cars": 139294
+      },
+      {
+        "plan": "New line, +20% cells, +10% delivery",
+        "odds": 0.56,
+        "extra_cost_per_quarter": 34800000,
+        "profit_per_quarter": 519441911,
+        "investment": 380000000.0,
+        "cars": 139109
+      },
+      {
+        "plan": "+4 shifts, +20% cells, +10% delivery",
+        "odds": 0.54,
+        "extra_cost_per_quarter": 51800000,
+        "profit_per_quarter": 420954830,
+        "investment": 0.0,
+        "cars": 139032
+      },
+      {
+        "plan": "+2 shifts, new line, +20% cells, +10% delivery",
+        "odds": 0.54,
+        "extra_cost_per_quarter": 52800000,
+        "profit_per_quarter": 500125694,
+        "investment": 380000000.0,
+        "cars": 138939
+      },
+      {
+        "plan": "+4 shifts, new line, +20% cells, +10% delivery",
+        "odds": 0.51,
+        "extra_cost_per_quarter": 70800000,
+        "profit_per_quarter": 401191924,
+        "investment": 380000000.0,
+        "cars": 138926
+      },
+      {
+        "plan": "+1 shift, new line, +20% cells, +10% delivery",
+        "odds": 0.51,
+        "extra_cost_per_quarter": 43800000,
+        "profit_per_quarter": 509630041,
+        "investment": 380000000.0,
+        "cars": 139004
+      },
+      {
+        "plan": "+2 shifts, +30% cells, +10% delivery",
+        "odds": 0.5,
+        "extra_cost_per_quarter": 40200000,
+        "profit_per_quarter": 515538782,
+        "investment": 0.0,
+        "cars": 139303
+      },
+      {
+        "plan": "+3 shifts, +20% cells, +10% delivery",
+        "odds": 0.5,
+        "extra_cost_per_quarter": 42800000,
+        "profit_per_quarter": 435063842,
+        "investment": 0.0,
+        "cars": 139748
+      },
+      {
+        "plan": "+3 shifts, new line, +10% cells, +20% delivery",
+        "odds": 0.47,
+        "extra_cost_per_quarter": 58400000,
+        "profit_per_quarter": 395755411,
+        "investment": 380000000.0,
+        "cars": 136428
+      },
+      {
+        "plan": "+4 shifts, +10% cells, +30% delivery",
+        "odds": 0.45,
+        "extra_cost_per_quarter": 51400000,
+        "profit_per_quarter": 403251588,
+        "investment": 0.0,
+        "cars": 136497
+      },
+      {
+        "plan": "+4 shifts, new line, +10% cells, +30% delivery",
+        "odds": 0.44,
+        "extra_cost_per_quarter": 70400000,
+        "profit_per_quarter": 380820484,
+        "investment": 380000000.0,
+        "cars": 136017
+      },
+      {
+        "plan": "+1 shift, new line, +10% cells, +20% delivery",
+        "odds": 0.44,
+        "extra_cost_per_quarter": 40400000,
+        "profit_per_quarter": 490210733,
+        "investment": 380000000.0,
+        "cars": 136049
+      },
+      {
+        "plan": "+2 shifts, new line, +10% cells, +20% delivery",
+        "odds": 0.44,
+        "extra_cost_per_quarter": 49400000,
+        "profit_per_quarter": 482283073,
+        "investment": 380000000.0,
+        "cars": 136188
+      },
+      {
+        "plan": "+2 shifts, +20% cells, +10% delivery",
+        "odds": 0.43,
+        "extra_cost_per_quarter": 33800000,
+        "profit_per_quarter": 516155510,
+        "investment": 0.0,
+        "cars": 138554
+      },
+      {
+        "plan": "New line, +10% cells, +20% delivery",
+        "odds": 0.43,
+        "extra_cost_per_quarter": 31400000,
+        "profit_per_quarter": 503713860,
+        "investment": 380000000.0,
+        "cars": 136632
+      },
+      {
+        "plan": "+1 shift, new line, +10% cells, +30% delivery",
+        "odds": 0.42,
+        "extra_cost_per_quarter": 43400000,
+        "profit_per_quarter": 492149341,
+        "investment": 380000000.0,
+        "cars": 136689
+      },
+      {
+        "plan": "+4 shifts, +10% cells, +20% delivery",
+        "odds": 0.42,
+        "extra_cost_per_quarter": 48400000,
+        "profit_per_quarter": 405336434,
+        "investment": 0.0,
+        "cars": 136369
+      },
+      {
+        "plan": "New line, +10% cells, +30% delivery",
+        "odds": 0.42,
+        "extra_cost_per_quarter": 34400000,
+        "profit_per_quarter": 492859275,
+        "investment": 380000000.0,
+        "cars": 135615
+      },
+      {
+        "plan": "+3 shifts, +10% cells, +20% delivery",
+        "odds": 0.41,
+        "extra_cost_per_quarter": 39400000,
+        "profit_per_quarter": 412360232,
+        "investment": 0.0,
+        "cars": 136092
+      },
+      {
+        "plan": "+3 shifts, new line, +10% cells, +30% delivery",
+        "odds": 0.4,
+        "extra_cost_per_quarter": 61400000,
+        "profit_per_quarter": 388215239,
+        "investment": 380000000.0,
+        "cars": 135792
+      },
+      {
+        "plan": "+2 shifts, new line, +10% cells, +30% delivery",
+        "odds": 0.4,
+        "extra_cost_per_quarter": 52400000,
+        "profit_per_quarter": 475822548,
+        "investment": 380000000.0,
+        "cars": 135740
+      },
+      {
+        "plan": "+3 shifts, +10% cells, +30% delivery",
+        "odds": 0.39,
+        "extra_cost_per_quarter": 42400000,
+        "profit_per_quarter": 408070825,
+        "investment": 0.0,
+        "cars": 135912
+      },
+      {
+        "plan": "+4 shifts, new line, +10% cells, +20% delivery",
+        "odds": 0.39,
+        "extra_cost_per_quarter": 67400000,
+        "profit_per_quarter": 379175895,
+        "investment": 380000000.0,
+        "cars": 135366
+      },
+      {
+        "plan": "+3 shifts, new line, +10% cells, +10% delivery",
+        "odds": 0.37,
+        "extra_cost_per_quarter": 55400000,
+        "profit_per_quarter": 391692747,
+        "investment": 380000000.0,
+        "cars": 135439
+      },
+      {
+        "plan": "+2 shifts, +10% cells, +30% delivery",
+        "odds": 0.36,
+        "extra_cost_per_quarter": 33400000,
+        "profit_per_quarter": 488018632,
+        "investment": 0.0,
+        "cars": 134859
+      },
+      {
+        "plan": "+4 shifts, new line, +10% cells, +10% delivery",
+        "odds": 0.36,
+        "extra_cost_per_quarter": 64400000,
+        "profit_per_quarter": 379952288,
+        "investment": 380000000.0,
+        "cars": 135055
+      },
+      {
+        "plan": "+4 shifts, +10% cells, +10% delivery",
+        "odds": 0.36,
+        "extra_cost_per_quarter": 45400000,
+        "profit_per_quarter": 404074997,
+        "investment": 0.0,
+        "cars": 135772
+      },
+      {
+        "plan": "+2 shifts, new line, +10% cells, +10% delivery",
+        "odds": 0.35,
+        "extra_cost_per_quarter": 46400000,
+        "profit_per_quarter": 482525621,
+        "investment": 380000000.0,
+        "cars": 135831
+      },
+      {
+        "plan": "+2 shifts, +10% cells, +20% delivery",
+        "odds": 0.35,
+        "extra_cost_per_quarter": 30400000,
+        "profit_per_quarter": 495248488,
+        "investment": 0.0,
+        "cars": 135407
+      },
+      {
+        "plan": "+3 shifts, +10% cells, +10% delivery",
+        "odds": 0.35,
+        "extra_cost_per_quarter": 36400000,
+        "profit_per_quarter": 406977882,
+        "investment": 0.0,
+        "cars": 134918
+      },
+      {
+        "plan": "+1 shift, +30% cells, +30% delivery",
+        "odds": 0.34,
+        "extra_cost_per_quarter": 37200000,
+        "profit_per_quarter": 492538396,
+        "investment": 0.0,
+        "cars": 135936
+      },
+      {
+        "plan": "+1 shift, new line, +10% cells, +10% delivery",
+        "odds": 0.34,
+        "extra_cost_per_quarter": 37400000,
+        "profit_per_quarter": 489253869,
+        "investment": 380000000.0,
+        "cars": 135537
+      },
+      {
+        "plan": "+1 shift, +30% cells, +20% delivery",
+        "odds": 0.34,
+        "extra_cost_per_quarter": 34200000,
+        "profit_per_quarter": 492596304,
+        "investment": 0.0,
+        "cars": 135555
+      },
+      {
+        "plan": "+1 shift, +30% cells, +10% delivery",
+        "odds": 0.33,
+        "extra_cost_per_quarter": 31200000,
+        "profit_per_quarter": 492221146,
+        "investment": 0.0,
+        "cars": 135118
+      },
+      {
+        "plan": "New line, +10% cells, +10% delivery",
+        "odds": 0.33,
+        "extra_cost_per_quarter": 28400000,
+        "profit_per_quarter": 491890877,
+        "investment": 380000000.0,
+        "cars": 134713
+      },
+      {
+        "plan": "+2 shifts, +10% cells, +10% delivery",
+        "odds": 0.31,
+        "extra_cost_per_quarter": 27400000,
+        "profit_per_quarter": 494227777,
+        "investment": 0.0,
+        "cars": 134886
+      },
+      {
+        "plan": "+1 shift, +20% cells, +30% delivery",
+        "odds": 0.3,
+        "extra_cost_per_quarter": 30800000,
+        "profit_per_quarter": 492521474,
+        "investment": 0.0,
+        "cars": 135105
+      },
+      {
+        "plan": "+1 shift, +20% cells, +20% delivery",
+        "odds": 0.29,
+        "extra_cost_per_quarter": 27800000,
+        "profit_per_quarter": 496541070,
+        "investment": 0.0,
+        "cars": 135237
+      },
+      {
+        "plan": "+1 shift, +20% cells, +10% delivery",
+        "odds": 0.27,
+        "extra_cost_per_quarter": 24800000,
+        "profit_per_quarter": 496576588,
+        "investment": 0.0,
+        "cars": 134853
+      },
+      {
+        "plan": "+1 shift, +10% cells, +10% delivery",
+        "odds": 0.23,
+        "extra_cost_per_quarter": 18400000,
+        "profit_per_quarter": 490998954,
+        "investment": 0.0,
+        "cars": 133302
+      },
+      {
+        "plan": "+1 shift, +10% cells, +20% delivery",
+        "odds": 0.23,
+        "extra_cost_per_quarter": 21400000,
+        "profit_per_quarter": 483657541,
+        "investment": 0.0,
+        "cars": 132740
+      },
+      {
+        "plan": "+1 shift, +10% cells, +30% delivery",
+        "odds": 0.19,
+        "extra_cost_per_quarter": 24400000,
+        "profit_per_quarter": 477890836,
+        "investment": 0.0,
+        "cars": 132382
+      },
+      {
+        "plan": "+3 shifts, +30% cells",
+        "odds": 0.18,
+        "extra_cost_per_quarter": 46200000,
+        "profit_per_quarter": 372442370,
+        "investment": 0.0,
+        "cars": 131454
+      },
+      {
+        "plan": "+1 shift, new line, +30% cells",
+        "odds": 0.17,
+        "extra_cost_per_quarter": 47200000,
+        "profit_per_quarter": 447877160,
+        "investment": 380000000.0,
+        "cars": 131448
+      },
+      {
+        "plan": "+2 shifts, +20% cells",
+        "odds": 0.17,
+        "extra_cost_per_quarter": 30800000,
+        "profit_per_quarter": 467004319,
+        "investment": 0.0,
+        "cars": 131801
+      },
+      {
+        "plan": "+2 shifts, new line, +30% cells",
+        "odds": 0.17,
+        "extra_cost_per_quarter": 56200000,
+        "profit_per_quarter": 440001300,
+        "investment": 380000000.0,
+        "cars": 131593
+      },
+      {
+        "plan": "New line, +30% cells",
+        "odds": 0.17,
+        "extra_cost_per_quarter": 38200000,
+        "profit_per_quarter": 454627494,
+        "investment": 380000000.0,
+        "cars": 131156
+      },
+      {
+        "plan": "New line, +20% cells",
+        "odds": 0.17,
+        "extra_cost_per_quarter": 31800000,
+        "profit_per_quarter": 459948744,
+        "investment": 380000000.0,
+        "cars": 131017
+      },
+      {
+        "plan": "+2 shifts, +30% cells",
+        "odds": 0.17,
+        "extra_cost_per_quarter": 37200000,
+        "profit_per_quarter": 463816102,
+        "investment": 0.0,
+        "cars": 132217
+      },
+      {
+        "plan": "+4 shifts, new line, +30% cells",
+        "odds": 0.17,
+        "extra_cost_per_quarter": 74200000,
+        "profit_per_quarter": 342061804,
+        "investment": 380000000.0,
+        "cars": 131121
+      },
+      {
+        "plan": "+3 shifts, new line, +30% cells",
+        "odds": 0.17,
+        "extra_cost_per_quarter": 65200000,
+        "profit_per_quarter": 353628128,
+        "investment": 380000000.0,
+        "cars": 131480
+      },
+      {
+        "plan": "+3 shifts, +20% cells",
+        "odds": 0.17,
+        "extra_cost_per_quarter": 39800000,
+        "profit_per_quarter": 377410227,
+        "investment": 0.0,
+        "cars": 131254
+      },
+      {
+        "plan": "+4 shifts, +20% cells",
+        "odds": 0.15,
+        "extra_cost_per_quarter": 48800000,
+        "profit_per_quarter": 368695546,
+        "investment": 0.0,
+        "cars": 131294
+      },
+      {
+        "plan": "+3 shifts, new line, +20% delivery",
+        "odds": 0.15,
+        "extra_cost_per_quarter": 52000000,
+        "profit_per_quarter": 332696313,
+        "investment": 380000000.0,
+        "cars": 126700
+      },
+      {
+        "plan": "+4 shifts, +30% cells",
+        "odds": 0.15,
+        "extra_cost_per_quarter": 55200000,
+        "profit_per_quarter": 365083011,
+        "investment": 0.0,
+        "cars": 131684
+      },
+      {
+        "plan": "+4 shifts, new line, +20% cells",
+        "odds": 0.15,
+        "extra_cost_per_quarter": 67800000,
+        "profit_per_quarter": 349846792,
+        "investment": 380000000.0,
+        "cars": 131315
+      },
+      {
+        "plan": "+30% cells, +10% delivery",
+        "odds": 0.14,
+        "extra_cost_per_quarter": 22200000,
+        "profit_per_quarter": 449892245,
+        "investment": 0.0,
+        "cars": 128471
+      },
+      {
+        "plan": "+4 shifts, new line, +20% delivery",
+        "odds": 0.14,
+        "extra_cost_per_quarter": 61000000,
+        "profit_per_quarter": 322348416,
+        "investment": 380000000.0,
+        "cars": 126511
+      },
+      {
+        "plan": "+2 shifts, new line, +20% cells",
+        "odds": 0.14,
+        "extra_cost_per_quarter": 49800000,
+        "profit_per_quarter": 445413802,
+        "investment": 380000000.0,
+        "cars": 131465
+      },
+      {
+        "plan": "+2 shifts, +30% delivery",
+        "odds": 0.14,
+        "extra_cost_per_quarter": 27000000,
+        "profit_per_quarter": 423895177,
+        "investment": 0.0,
+        "cars": 125726
+      },
+      {
+        "plan": "+1 shift, new line, +30% delivery",
+        "odds": 0.14,
+        "extra_cost_per_quarter": 37000000,
+        "profit_per_quarter": 416814131,
+        "investment": 380000000.0,
+        "cars": 126104
+      },
+      {
+        "plan": "+1 shift, new line, +20% delivery",
+        "odds": 0.14,
+        "extra_cost_per_quarter": 34000000,
+        "profit_per_quarter": 425506805,
+        "investment": 380000000.0,
+        "cars": 126841
+      },
+      {
+        "plan": "+2 shifts, new line, +10% cells",
+        "odds": 0.14,
+        "extra_cost_per_quarter": 43400000,
+        "profit_per_quarter": 436753581,
+        "investment": 380000000.0,
+        "cars": 129515
+      },
+      {
+        "plan": "+1 shift, new line, +20% cells",
+        "odds": 0.13,
+        "extra_cost_per_quarter": 40800000,
+        "profit_per_quarter": 453055065,
+        "investment": 380000000.0,
+        "cars": 131289
+      },
+      {
+        "plan": "+1 shift, +20% cells",
+        "odds": 0.13,
+        "extra_cost_per_quarter": 21800000,
+        "profit_per_quarter": 465355020,
+        "investment": 0.0,
+        "cars": 130422
+      },
+      {
+        "plan": "+4 shifts, +20% delivery",
+        "odds": 0.13,
+        "extra_cost_per_quarter": 42000000,
+        "profit_per_quarter": 340057739,
+        "investment": 0.0,
+        "cars": 126331
+      },
+      {
+        "plan": "+4 shifts, new line, +10% cells",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 61400000,
+        "profit_per_quarter": 342945716,
+        "investment": 380000000.0,
+        "cars": 129452
+      },
+      {
+        "plan": "+4 shifts, +10% delivery",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 39000000,
+        "profit_per_quarter": 346661896,
+        "investment": 0.0,
+        "cars": 126835
+      },
+      {
+        "plan": "+4 shifts, +10% cells",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 42400000,
+        "profit_per_quarter": 367586652,
+        "investment": 0.0,
+        "cars": 130242
+      },
+      {
+        "plan": "+4 shifts, new line, +30% delivery",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 64000000,
+        "profit_per_quarter": 320827691,
+        "investment": 380000000.0,
+        "cars": 126718
+      },
+      {
+        "plan": "+2 shifts, new line, +10% delivery",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 40000000,
+        "profit_per_quarter": 417086512,
+        "investment": 380000000.0,
+        "cars": 126528
+      },
+      {
+        "plan": "+2 shifts, new line, +20% delivery",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 43000000,
+        "profit_per_quarter": 416533707,
+        "investment": 380000000.0,
+        "cars": 126845
+      },
+      {
+        "plan": "+2 shifts, +10% delivery",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 21000000,
+        "profit_per_quarter": 438101283,
+        "investment": 0.0,
+        "cars": 126789
+      },
+      {
+        "plan": "+4 shifts, new line, +10% delivery",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 58000000,
+        "profit_per_quarter": 322819473,
+        "investment": 380000000.0,
+        "cars": 126157
+      },
+      {
+        "plan": "+2 shifts, +10% cells",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 24400000,
+        "profit_per_quarter": 454397202,
+        "investment": 0.0,
+        "cars": 129340
+      },
+      {
+        "plan": "+20% cells, +30% delivery",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 21800000,
+        "profit_per_quarter": 448048895,
+        "investment": 0.0,
+        "cars": 128181
+      },
+      {
+        "plan": "New line, +30% delivery",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 28000000,
+        "profit_per_quarter": 435688460,
+        "investment": 380000000.0,
+        "cars": 127383
+      },
+      {
+        "plan": "+3 shifts, new line, +10% delivery",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 49000000,
+        "profit_per_quarter": 331787770,
+        "investment": 380000000.0,
+        "cars": 126153
+      },
+      {
+        "plan": "+3 shifts, +30% delivery",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 36000000,
+        "profit_per_quarter": 346996948,
+        "investment": 0.0,
+        "cars": 126462
+      },
+      {
+        "plan": "+3 shifts, new line, +20% cells",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 58800000,
+        "profit_per_quarter": 354729640,
+        "investment": 380000000.0,
+        "cars": 130738
+      },
+      {
+        "plan": "+3 shifts, new line, +30% delivery",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 55000000,
+        "profit_per_quarter": 328311139,
+        "investment": 380000000.0,
+        "cars": 126506
+      },
+      {
+        "plan": "+3 shifts, +10% cells",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 33400000,
+        "profit_per_quarter": 377072295,
+        "investment": 0.0,
+        "cars": 130310
+      },
+      {
+        "plan": "+3 shifts, +10% delivery",
+        "odds": 0.12,
+        "extra_cost_per_quarter": 30000000,
+        "profit_per_quarter": 355025779,
+        "investment": 0.0,
+        "cars": 126746
+      },
+      {
+        "plan": "+3 shifts, +20% delivery",
+        "odds": 0.11,
+        "extra_cost_per_quarter": 33000000,
+        "profit_per_quarter": 347993867,
+        "investment": 0.0,
+        "cars": 126182
+      },
+      {
+        "plan": "New line, +10% cells",
+        "odds": 0.11,
+        "extra_cost_per_quarter": 25400000,
+        "profit_per_quarter": 452810877,
+        "investment": 380000000.0,
+        "cars": 129264
+      },
+      {
+        "plan": "+1 shift, new line, +10% delivery",
+        "odds": 0.11,
+        "extra_cost_per_quarter": 31000000,
+        "profit_per_quarter": 422351029,
+        "investment": 380000000.0,
+        "cars": 126044
+      },
+      {
+        "plan": "+4 shifts, +30% delivery",
+        "odds": 0.11,
+        "extra_cost_per_quarter": 45000000,
+        "profit_per_quarter": 330630906,
+        "investment": 0.0,
+        "cars": 125430
+      },
+      {
+        "plan": "+1 shift, new line, +10% cells",
+        "odds": 0.11,
+        "extra_cost_per_quarter": 34400000,
+        "profit_per_quarter": 445113992,
+        "investment": 380000000.0,
+        "cars": 129432
+      },
+      {
+        "plan": "+2 shifts, +20% delivery",
+        "odds": 0.11,
+        "extra_cost_per_quarter": 24000000,
+        "profit_per_quarter": 429947238,
+        "investment": 0.0,
+        "cars": 126122
+      },
+      {
+        "plan": "+3 shifts, new line, +10% cells",
+        "odds": 0.11,
+        "extra_cost_per_quarter": 52400000,
+        "profit_per_quarter": 352375263,
+        "investment": 380000000.0,
+        "cars": 129512
+      },
+      {
+        "plan": "+10% cells, +30% delivery",
+        "odds": 0.1,
+        "extra_cost_per_quarter": 15400000,
+        "profit_per_quarter": 442199677,
+        "investment": 0.0,
+        "cars": 126595
+      },
+      {
+        "plan": "+2 shifts, new line, +30% delivery",
+        "odds": 0.1,
+        "extra_cost_per_quarter": 46000000,
+        "profit_per_quarter": 411956286,
+        "investment": 380000000.0,
+        "cars": 126641
+      },
+      {
+        "plan": "+30% cells, +20% delivery",
+        "odds": 0.1,
+        "extra_cost_per_quarter": 25200000,
+        "profit_per_quarter": 447666972,
+        "investment": 0.0,
+        "cars": 128572
+      },
+      {
+        "plan": "New line, +10% delivery",
+        "odds": 0.1,
+        "extra_cost_per_quarter": 22000000,
+        "profit_per_quarter": 432906466,
+        "investment": 380000000.0,
+        "cars": 126246
+      },
+      {
+        "plan": "New line, +20% delivery",
+        "odds": 0.1,
+        "extra_cost_per_quarter": 25000000,
+        "profit_per_quarter": 433264854,
+        "investment": 380000000.0,
+        "cars": 126681
+      },
+      {
+        "plan": "+1 shift, +30% delivery",
+        "odds": 0.09,
+        "extra_cost_per_quarter": 18000000,
+        "profit_per_quarter": 431442308,
+        "investment": 0.0,
+        "cars": 125538
+      },
+      {
+        "plan": "+1 shift, +10% delivery",
+        "odds": 0.09,
+        "extra_cost_per_quarter": 12000000,
+        "profit_per_quarter": 435074660,
+        "investment": 0.0,
+        "cars": 125232
+      },
+      {
+        "plan": "+20% cells, +10% delivery",
+        "odds": 0.09,
+        "extra_cost_per_quarter": 15800000,
+        "profit_per_quarter": 452135971,
+        "investment": 0.0,
+        "cars": 127933
+      },
+      {
+        "plan": "+1 shift, +30% cells",
+        "odds": 0.09,
+        "extra_cost_per_quarter": 28200000,
+        "profit_per_quarter": 458089128,
+        "investment": 0.0,
+        "cars": 130310
+      },
+      {
+        "plan": "+30% cells, +30% delivery",
+        "odds": 0.09,
+        "extra_cost_per_quarter": 28200000,
+        "profit_per_quarter": 440674475,
+        "investment": 0.0,
+        "cars": 128055
+      },
+      {
+        "plan": "+10% cells, +20% delivery",
+        "odds": 0.09,
+        "extra_cost_per_quarter": 12400000,
+        "profit_per_quarter": 448128976,
+        "investment": 0.0,
+        "cars": 126974
+      },
+      {
+        "plan": "+20% cells, +20% delivery",
+        "odds": 0.08,
+        "extra_cost_per_quarter": 18800000,
+        "profit_per_quarter": 450900013,
+        "investment": 0.0,
+        "cars": 128161
+      },
+      {
+        "plan": "+10% cells, +10% delivery",
+        "odds": 0.08,
+        "extra_cost_per_quarter": 9400000,
+        "profit_per_quarter": 450869465,
+        "investment": 0.0,
+        "cars": 126940
+      },
+      {
+        "plan": "+3 shifts",
+        "odds": 0.08,
+        "extra_cost_per_quarter": 27000000,
+        "profit_per_quarter": 342331513,
+        "investment": 0.0,
+        "cars": 124548
+      },
+      {
+        "plan": "+1 shift, +20% delivery",
+        "odds": 0.08,
+        "extra_cost_per_quarter": 15000000,
+        "profit_per_quarter": 438702782,
+        "investment": 0.0,
+        "cars": 126090
+      },
+      {
+        "plan": "+1 shift, +10% cells",
+        "odds": 0.07,
+        "extra_cost_per_quarter": 15400000,
+        "profit_per_quarter": 460681942,
+        "investment": 0.0,
+        "cars": 128988
+      },
+      {
+        "plan": "+4 shifts",
+        "odds": 0.07,
+        "extra_cost_per_quarter": 36000000,
+        "profit_per_quarter": 334043312,
+        "investment": 0.0,
+        "cars": 124648
+      },
+      {
+        "plan": "+1 shift",
+        "odds": 0.07,
+        "extra_cost_per_quarter": 9000000,
+        "profit_per_quarter": 435406827,
+        "investment": 0.0,
+        "cars": 124886
+      },
+      {
+        "plan": "+1 shift, new line",
+        "odds": 0.07,
+        "extra_cost_per_quarter": 28000000,
+        "profit_per_quarter": 416569218,
+        "investment": 380000000.0,
+        "cars": 124907
+      },
+      {
+        "plan": "+3 shifts, new line",
+        "odds": 0.06,
+        "extra_cost_per_quarter": 46000000,
+        "profit_per_quarter": 324501983,
+        "investment": 380000000.0,
+        "cars": 124712
+      },
+      {
+        "plan": "New line",
+        "odds": 0.06,
+        "extra_cost_per_quarter": 19000000,
+        "profit_per_quarter": 421755693,
+        "investment": 380000000.0,
+        "cars": 124413
+      },
+      {
+        "plan": "+30% cells",
+        "odds": 0.06,
+        "extra_cost_per_quarter": 19200000,
+        "profit_per_quarter": 439129328,
+        "investment": 0.0,
+        "cars": 126689
+      },
+      {
+        "plan": "+20% cells",
+        "odds": 0.06,
+        "extra_cost_per_quarter": 12800000,
+        "profit_per_quarter": 441680521,
+        "investment": 0.0,
+        "cars": 126191
+      },
+      {
+        "plan": "+4 shifts, new line",
+        "odds": 0.06,
+        "extra_cost_per_quarter": 55000000,
+        "profit_per_quarter": 307960031,
+        "investment": 380000000.0,
+        "cars": 123656
+      },
+      {
+        "plan": "+20% delivery",
+        "odds": 0.05,
+        "extra_cost_per_quarter": 6000000,
+        "profit_per_quarter": 416842515,
+        "investment": 0.0,
+        "cars": 122094
+      },
+      {
+        "plan": "+2 shifts, new line",
+        "odds": 0.05,
+        "extra_cost_per_quarter": 37000000,
+        "profit_per_quarter": 400107753,
+        "investment": 380000000.0,
+        "cars": 123941
+      },
+      {
+        "plan": "+10% cells",
+        "odds": 0.05,
+        "extra_cost_per_quarter": 6400000,
+        "profit_per_quarter": 444594356,
+        "investment": 0.0,
+        "cars": 125739
+      },
+      {
+        "plan": "+2 shifts",
+        "odds": 0.05,
+        "extra_cost_per_quarter": 18000000,
+        "profit_per_quarter": 424057072,
+        "investment": 0.0,
+        "cars": 124582
+      },
+      {
+        "plan": "+10% delivery",
+        "odds": 0.04,
+        "extra_cost_per_quarter": 3000000,
+        "profit_per_quarter": 421904697,
+        "investment": 0.0,
+        "cars": 122361
+      },
+      {
+        "plan": "+30% delivery",
+        "odds": 0.04,
+        "extra_cost_per_quarter": 9000000,
+        "profit_per_quarter": 421439873,
+        "investment": 0.0,
+        "cars": 123077
+      },
+      {
+        "plan": "No changes",
+        "odds": 0.03,
+        "extra_cost_per_quarter": 0,
+        "profit_per_quarter": 426084346,
+        "investment": 0.0,
+        "cars": 122513
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "title": "Today's resources cannot deliver +20%",
+      "body": "Odds are 4% with no changes. Battery cells runs out first in 50% of runs.",
+      "impact": "4% odds"
+    },
+    {
+      "title": "Cheapest route: New line, +30% cells, +20% delivery",
+      "body": "Meets demand in 83% of runs for $44.2M extra a quarter; quarterly profit $545.1M.",
+      "impact": "$44.2M/qtr"
+    },
+    {
+      "title": "Fix assembly capacity first under your plan",
+      "body": "It is still the limit in 42% of runs.",
+      "impact": "Priority"
+    },
+    {
+      "title": "Lock battery supply before adding shifts",
+      "body": "Cell supply has the widest swing, including an 8% chance of a supplier disruption.",
+      "impact": "Risk"
+    }
+  ]
+}
